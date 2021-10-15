@@ -1,0 +1,10 @@
+FROM ubuntu:latest
+
+WORKDIR /labwork-gabbymoz/CA1
+
+COPY proc_count.sh .
+
+RUN chmod u+x /labwork-gabbymoz/CA1/proc_count.sh
+
+CMD ["/labwork-gabbymoz/CA1/proc_count.sh"]
+
