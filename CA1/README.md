@@ -25,14 +25,19 @@ more - views the text of the file
 /proc/cpuinfo - is where the processor information is stored
 wc -l - is the word count
 
-echo $cnt
+echo $cnt (read value)
 
 to build a docker container:
--docker build .
+docker build .
 docker images to get the docker image ID (a3eb017240fd - image ID)
 docker run a3eb017240fd
+ 
+To check ou the image:
+gcloud container images list --labwork-gabbymoz eu.gcr.io/epa-labs-2021
+(Successfully built 98221997ba49)
 
 docker push the image:
+docker push eu.gcr.io/epa-labs-2021/cpuvirt:latest
 eu.gcr.io/epa-labs-2021/cpuvirt:latest
 
 
